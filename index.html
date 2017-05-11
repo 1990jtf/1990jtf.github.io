@@ -5,31 +5,41 @@
     <title>蒋腾飞的博客 - 发现更大的世界！</title>
     <meta charset="utf-8">
     <!--<title>Tengfei's blog - discovery a bigger world! </title>      -->
+    <link rel="stylesheet" href="style/normal.css"></link>
     <link rel="stylesheet" href="style/base.css"></link>
     <link rel="stylesheet" href="style/index.css"></link>
-    <script src="js/vue.js"></script>
-    <script src="js/index.js"></script>
-    <script>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                message: 'Hello Vue!'
-            }
-        })
-    </script>
+
 </head>
 
 <body>
-    <div id="app">
-        {{ message }}
+    <div class="container mb20">
+        <!-- 个人简介 start-->
+        <div class="my-bio">
+            <img src="images/myAvatar.jpg" class="myAvatar" />
+            <div class="my-desc">
+                <h1 class="my-name">{{ my_name }}</h1>
+                <p class="my-email"><span>邮箱：</span>{{ my_email }}</p>
+            </div>
+                    <!-- 导航 start-->
+        <nav class="blog-nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">文章</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">关于我</a></li>
+            </ul>
+        </nav>
+        <!-- 导航 end-->
+        </div>
+        <!-- 个人简介 end-->
     </div>
     <div class="container">
         <div class="my-bio">
-            <img src="images/myAvatar.jpg" class="myAvatar" />
+            未完成。。。
         </div>
     </div>
-    <h1>Hello World</h1>
-    <p>I'm hosted with GitHub Pages.</p>
+    <script src="js/vue.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

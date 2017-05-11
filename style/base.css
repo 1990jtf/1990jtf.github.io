@@ -1,4 +1,7 @@
+ul,li{margin: 0;padding:0}
+a{text-decoration: none;}
 .container{
     width:800px;
     margin: 0 auto;
 }
+.mb20 {margin-bottom: 20px;}
